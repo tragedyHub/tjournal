@@ -1,9 +1,12 @@
 .root {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
 	background-color: #fff4e2!important;
-    padding: 0 20px;
+    padding: 0 35px 0 10px;
     height: 60px;
     }
 
@@ -52,4 +55,10 @@
             box-shadow: 0 0 0 3px rgb(229 160 64 / 12%);
         }
     }
+}
+
+.avatar {
+    margin-left: 15px;
+    border-radius: 20%!important;
+    margin-right: 10px;
 }

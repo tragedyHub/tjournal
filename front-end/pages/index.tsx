@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Paper, Typography } from "@material-ui/core";
 import { Header } from "../components/Header";
 import { Post } from "../components/Post";
+import { LeftMenu } from "../components/LeftMenu";
 
 const Home: NextPage = () => {
 	return (
@@ -24,7 +25,9 @@ const Home: NextPage = () => {
 			</Head>
 			<Header />
 			<div className="main_cont">
-				<div className="leftSide"></div>
+				<div className="leftSide">
+					<LeftMenu />
+				</div>
 				<div className="content">
 					<Post />	
 				</div>

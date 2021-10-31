@@ -7,6 +7,7 @@ import {
 	SmsOutlined as MessageIcon,
 	NotificationsNoneOutlined as NotificationIcon,
 	Menu as MenuIcon,
+	ExpandMoreOutlined as ArrowBottom,
 } from "@material-ui/icons";
 
 import styles from "./Header.module.scss";
@@ -40,10 +41,11 @@ export const Header: React.FC = () => {
 					<NotificationIcon />
 				</IconButton>
 				<Avatar
-					className="ml-15"
+					className={styles.avatar}
 					alt="Remy sharp"
 					src="https://avatars.githubusercontent.com/u/43935004?v=4"
 				/>
+				<ArrowBottom />
 			</div>
 		</Paper>
 	);
