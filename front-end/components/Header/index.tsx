@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
 					<input type="text" placeholder="Поиск" />
 				</div>
 				<Button variant="contained" className={styles.penButton}>
-					<PenIcon />
+					Новая запись
 				</Button>
 			</div>
 			<div className="d-flex align-center">
