@@ -1,8 +1,15 @@
 import React from "react";
-import { Paper, Typography } from "@material-ui/core";
+import { IconButton, Paper, Typography } from "@material-ui/core";
 import Image from "next/image";
 
 import styles from "./Post.module.scss";
+import {
+	ModeCommentOutlined as CommentsIcon,
+	RepeatOutlined as RepeatIcon,
+	BookmarkBorderOutlined as FavoriteIcon,
+	ShareOutlined as ShareIcon,
+	ArrowBackIos as Arrow,
+} from "@material-ui/icons";
 
 export const Post: React.FC = () => {
 	return (
@@ -21,6 +28,36 @@ export const Post: React.FC = () => {
 				height={330}
 				width={640}
 			/>
+
+			<div className={styles.post_footer}>
+				<ul className={styles.actions}>
+					<li>
+						<IconButton>
+							<CommentsIcon />
+						</IconButton>
+					</li>
+					<li>
+						<IconButton>
+							<RepeatIcon />
+						</IconButton>
+					</li>
+					<li>
+						<IconButton>
+							<FavoriteIcon />
+						</IconButton>
+					</li>
+					<li>
+						<IconButton>
+							<ShareIcon />
+						</IconButton>
+					</li>
+				</ul>
+				<div className={styles.raiting}>
+					<Arrow className={styles.rotate} />
+					<span>40</span>
+					<Arrow className={styles.rotate2} />
+				</div>
+			</div>
 		</Paper>
 	);
 };
