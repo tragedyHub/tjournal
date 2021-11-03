@@ -1,6 +1,6 @@
 .menu {
 	position: fixed;
-    top: 70px;
+	top: 70px;
 	width: 200px;
 	left: 15px;
 	ul {
@@ -9,8 +9,9 @@
 		margin: 0;
 	}
 	li {
-        margin-bottom: 2px;
+		margin-bottom: 2px;
 		button {
+			transition: .1s all ease;
 			width: 100%;
 			display: flex;
 			justify-content: flex-start;
@@ -19,7 +20,17 @@
 			font-size: 16px;
 			font-weight: 400;
 			svg {
+				transition: .1s all ease;
 				margin-right: 10px;
+			}
+		}
+		&:hover {
+			button {
+				background: #fff !important;
+			}
+
+			path {
+				fill: #e8ac58;
 			}
 		}
 	}
